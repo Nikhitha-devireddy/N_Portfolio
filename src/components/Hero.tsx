@@ -55,10 +55,10 @@ export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
         {/* Dynamic StrokeText Editorial Wordmark */}
         <div className="mb-3 max-w-xs">
           <StrokeText
-            text="DATA INTELLIGENCE"
+            text="NIKHITHA DEVIREDDY"
             strokeColor={darkMode ? '#60a5fa' : '#2563eb'}
             fillColor={darkMode ? '#f8fafc' : '#0f172a'}
-            fontSize={26}
+            fontSize={24}
             fontWeight={800}
             letterSpacing={-0.5}
             strokeWidth={1.2}
@@ -71,12 +71,12 @@ export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
         </div>
 
         {/* Primary Headline */}
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-950 dark:text-white leading-snug md:leading-[1.25] mb-5 max-w-3xl">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-semibold tracking-tight text-neutral-950 dark:text-white leading-snug md:leading-[1.25] mb-4 max-w-3xl">
           {portfolioConfig.hero.headline}
         </h1>
 
         {/* Bio paragraph */}
-        <p className="text-base sm:text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-3xl mb-8">
+        <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-3xl mb-8">
           {portfolioConfig.hero.subheadline}
         </p>
 

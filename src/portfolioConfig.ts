@@ -88,8 +88,8 @@ export const portfolioConfig: PortfolioConfig = {
 
   hero: {
     badge: "ENGINEERING & ANALYST PORTFOLIO // 2026 EDITION",
-    headline: "Translating complex datasets into actionable business intelligence & high-throughput systems.",
-    subheadline: "Computer Science Engineering undergraduate (AI & ML) at VIT-AP (8.75 CGPA). Experienced in end-to-end software engineering, deterministic clinical platforms, Star Schema modeling, optimized SQL query pipelines, and low-latency machine learning architectures. Seeking Software Development, AI/ML, or Data Analytics roles.",
+    headline: "Hi, I'm Nikhitha — a Software Engineer & Data Analyst building reliable, high-impact systems.",
+    subheadline: "Computer Science Engineering undergraduate (AI & ML) at VIT-AP (8.75 CGPA). Passionate about writing clean, scalable code in Java and Python, architecting optimized SQL databases, and building end-to-end intelligent systems—from clinical AI rule engines and low-latency ML triggers to enterprise BI dashboards. Actively seeking Software Development, AI/ML, and Data Analytics roles.",
     impactStats: [
       {
         metric: "15x Latency Drop",
