@@ -53,14 +53,14 @@ export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
         </div>
 
         {/* Dynamic StrokeText Editorial Wordmark */}
-        <div className="mb-4 max-w-lg">
+        <div className="mb-3 max-w-xs">
           <StrokeText
             text="DATA INTELLIGENCE"
             strokeColor={darkMode ? '#60a5fa' : '#2563eb'}
             fillColor={darkMode ? '#f8fafc' : '#0f172a'}
-            fontSize={38}
+            fontSize={26}
             fontWeight={800}
-            letterSpacing={-1}
+            letterSpacing={-0.5}
             strokeWidth={1.2}
             trigger="mount"
             fillMode="wipe"
@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
         </div>
 
         {/* Primary Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-950 dark:text-white leading-[1.12] mb-6 max-w-4xl">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-950 dark:text-white leading-snug md:leading-[1.25] mb-5 max-w-3xl">
           {portfolioConfig.hero.headline}
         </h1>
 
