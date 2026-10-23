@@ -52,10 +52,10 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
         {/* Desktop Anchor Links */}
         <nav className="hidden md:flex items-center space-x-7 text-xs font-medium uppercase tracking-wider text-neutral-600 dark:text-neutral-400">
           <a
-            href="#case-studies"
+            href="#projects"
             className="hover:text-neutral-900 dark:hover:text-white transition-colors"
           >
-            Case Studies
+            Projects
           </a>
           <a
             href="#toolkit"
@@ -136,11 +136,11 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
       {mobileMenuOpen && (
         <div className="md:hidden border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#0a0a0c] px-4 py-4 space-y-3 font-mono text-xs uppercase">
           <a
-            href="#case-studies"
+            href="#projects"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white"
           >
-            Case Studies
+            Projects
           </a>
           <a
             href="#toolkit"

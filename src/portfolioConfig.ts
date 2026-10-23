@@ -87,7 +87,7 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   hero: {
-    badge: "ENGINEERING & ANALYST PORTFOLIO // 2026 EDITION",
+    badge: "ENGINEERING & ANALYST PORTFOLIO • 2026 EDITION",
     headline: "Hi, I'm Nikhitha — a Software Engineer & Data Analyst building reliable, high-impact systems.",
     subheadline: "Computer Science Engineering undergraduate (AI & ML) at VIT-AP (8.75 CGPA). Passionate about writing clean, scalable code in Java and Python, architecting optimized SQL databases, and building end-to-end intelligent systems—from clinical AI rule engines and low-latency ML triggers to enterprise BI dashboards. Actively seeking Software Development, AI/ML, and Data Analytics roles.",
     impactStats: [

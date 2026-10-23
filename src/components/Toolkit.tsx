@@ -15,7 +15,7 @@ export const Toolkit: React.FC = () => {
         {/* Section Header */}
         <div className="mb-12">
           <div className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-            // 02. Core Competencies
+            02. Core Competencies
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-neutral-950 dark:text-white">

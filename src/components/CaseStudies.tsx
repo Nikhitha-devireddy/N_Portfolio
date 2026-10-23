@@ -27,16 +27,16 @@ export const CaseStudies: React.FC = () => {
       : portfolioConfig.caseStudies.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="case-studies" className="py-20 border-b border-neutral-200 dark:border-neutral-800">
+    <section id="projects" className="py-20 border-b border-neutral-200 dark:border-neutral-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
             <div className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-              // 01. Portfolio Projects
+              01. Featured Projects
             </div>
             <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-neutral-950 dark:text-white">
-              Featured Case Studies
+              Featured Projects
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 max-w-md font-mono">
@@ -141,7 +141,7 @@ export const CaseStudies: React.FC = () => {
                       onClick={() => setSelectedStudy(study)}
                       className="inline-flex items-center gap-1 font-medium text-neutral-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 underline underline-offset-4 cursor-pointer"
                     >
-                      <span>Read Case Study</span>
+                      <span>View Project Details</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </button>
 

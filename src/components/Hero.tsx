@@ -83,10 +83,10 @@ export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
         {/* Action CTAs */}
         <div className="flex flex-wrap items-center gap-3 sm:gap-4">
           <a
-            href="#case-studies"
+            href="#projects"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-neutral-950 dark:bg-white dark:text-neutral-950 rounded hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors shadow-xs"
           >
-            <span>Explore Case Studies</span>
+            <span>Explore Projects</span>
             <ArrowRight className="w-4 h-4" />
           </a>
           <a

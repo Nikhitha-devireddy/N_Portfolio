@@ -254,7 +254,7 @@ export const StaticDashboardModal: React.FC<StaticDashboardModalProps> = ({
 
             <div className="space-y-3 font-mono text-xs">
               <div className="p-3.5 rounded bg-neutral-950 text-neutral-100 border border-neutral-800">
-                <div className="text-neutral-400 text-[11px] mb-1">// 1. Median Salary with Slicer Context Preservation</div>
+                <div className="text-neutral-400 text-[11px] mb-1">DAX Measure 01: Median Salary with Slicer Context Preservation</div>
                 <div className="text-blue-400">Median_Salary_USD =</div>
                 <div className="pl-4 text-neutral-300">
                   CALCULATE(
@@ -268,7 +268,7 @@ export const StaticDashboardModal: React.FC<StaticDashboardModalProps> = ({
               </div>
 
               <div className="p-3.5 rounded bg-neutral-950 text-neutral-100 border border-neutral-800">
-                <div className="text-neutral-400 text-[11px] mb-1">// 2. Dynamic YoY Compensation Variance Ratio</div>
+                <div className="text-neutral-400 text-[11px] mb-1">DAX Measure 02: Dynamic YoY Compensation Variance Ratio</div>
                 <div className="text-blue-400">YoY_Salary_Variance =</div>
                 <div className="pl-4 text-neutral-300">
                   VAR CurrentYear = [Median_Salary_USD]
@@ -282,7 +282,7 @@ export const StaticDashboardModal: React.FC<StaticDashboardModalProps> = ({
               </div>
 
               <div className="p-3.5 rounded bg-neutral-950 text-neutral-100 border border-neutral-800">
-                <div className="text-neutral-400 text-[11px] mb-1">// 3. Global Deduplicated Job Count</div>
+                <div className="text-neutral-400 text-[11px] mb-1">DAX Measure 03: Global Deduplicated Job Count</div>
                 <div className="text-blue-400">Active_Role_Count =</div>
                 <div className="pl-4 text-neutral-300">
                   DISTINCTCOUNTNOBLANK('Fact_Compensation'[Compensation_ID])

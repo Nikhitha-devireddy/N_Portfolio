@@ -21,7 +21,7 @@ export const Experience: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
             <div className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-              // 03. Trajectory & Impact
+              03. Trajectory & Impact
             </div>
             <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-neutral-950 dark:text-white">
               Experience & Education

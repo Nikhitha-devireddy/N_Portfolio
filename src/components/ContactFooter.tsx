@@ -20,7 +20,7 @@ export const ContactFooter: React.FC = () => {
         {/* Top Callout */}
         <div className="mb-14">
           <div className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-            // 04. Frictionless Communication
+            04. Contact & Collaboration
           </div>
           <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-neutral-950 dark:text-white mb-3">
             Initiate Direct Collaboration
