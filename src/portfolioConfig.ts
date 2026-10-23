@@ -75,8 +75,8 @@ export interface PortfolioConfig {
 export const portfolioConfig: PortfolioConfig = {
   personal: {
     name: "Nikhitha Lakshmi Devireddy",
-    title: "Data & Business Intelligence Analyst",
-    roleBadge: "Open to Data Analyst & BI Roles",
+    title: "Software Engineer & Data/BI Analyst",
+    roleBadge: "Open to Software Engineering & Data Roles",
     location: "Andhra Pradesh, India",
     phone: "+91-8179079671",
     email: "lakshmi.23bce20273@vitapstudent.ac.in",
@@ -87,9 +87,9 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   hero: {
-    badge: "ANALYST PORTFOLIO // 2026 EDITION",
+    badge: "ENGINEERING & ANALYST PORTFOLIO // 2026 EDITION",
     headline: "Translating complex datasets into actionable business intelligence & high-throughput systems.",
-    subheadline: "Computer Science Engineering undergraduate (AI & ML) at VIT-AP (8.75 CGPA). Specialized in deterministic data modeling, Star Schema architectures, DAX analytics, optimized SQL pipelines, and low-latency machine learning systems.",
+    subheadline: "Computer Science Engineering undergraduate (AI & ML) at VIT-AP (8.75 CGPA). Experienced in end-to-end software engineering, deterministic clinical platforms, Star Schema modeling, optimized SQL query pipelines, and low-latency machine learning architectures. Seeking Software Development, AI/ML, or Data Analytics roles.",
     impactStats: [
       {
         metric: "15x Latency Drop",
@@ -333,6 +333,6 @@ export const portfolioConfig: PortfolioConfig = {
 
   footer: {
     note: "Crafted with Swiss editorial minimalism. 100% static, zero tracking, sub-millisecond load time.",
-    status: "Available for Data Analyst, Business Intelligence & Software Engineering roles."
+    status: "Open to Software Engineering, Data Analyst & AI/ML Roles."
   }
 };

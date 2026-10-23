@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180" fill="none">
+  <!-- Rounded Squircle Base -->
+  <rect width="180" height="180" rx="42" fill="#09090b"/>
+  <rect width="176" height="176" x="2" y="2" rx="40" stroke="#27272a" stroke-width="3" stroke-opacity="0.8"/>
+  
+  <!-- Subtle Gradient Accent Glow -->
+  <circle cx="130" cy="50" r="40" fill="#2563eb" fill-opacity="0.3" filter="blur(20px)"/>
+  
+  <!-- Geometric Stylized "N" Monogram -->
+  <!-- Left Pillar -->
+  <rect x="48" y="50" width="16" height="80" rx="7" fill="#f8fafc"/>
+  
+  <!-- Diagonal Beam -->
+  <path d="M58 58 L122 122" stroke="#2563eb" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right Pillar -->
+  <rect x="116" y="50" width="16" height="80" rx="7" fill="#f8fafc"/>
+  
+  <!-- Software Engineering & Data Node Indicator -->
+  <circle cx="124" cy="50" r="10" fill="#60a5fa"/>
+  <circle cx="124" cy="50" r="4" fill="#ffffff"/>
+</svg>

@@ -31,15 +31,22 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
         {/* Minimal text logo */}
         <a
           href="#"
-          className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 group text-left"
+          className="flex items-center gap-2.5 group text-left"
           aria-label="Home"
         >
-          <span className="font-semibold text-sm sm:text-base tracking-tight text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-            {portfolioConfig.personal.name}
-          </span>
-          <span className="text-xs text-neutral-500 dark:text-neutral-400 font-mono hidden md:inline">
-            / {portfolioConfig.personal.title}
-          </span>
+          <img
+            src="/favicon.svg"
+            alt="App Icon"
+            className="w-5 h-5 rounded-xs shrink-0 group-hover:scale-105 transition-transform"
+          />
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2">
+            <span className="font-semibold text-sm sm:text-base tracking-tight text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {portfolioConfig.personal.name}
+            </span>
+            <span className="text-xs text-neutral-500 dark:text-neutral-400 font-mono hidden md:inline">
+              / {portfolioConfig.personal.title}
+            </span>
+          </div>
         </a>
 
         {/* Desktop Anchor Links */}
