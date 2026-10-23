@@ -1,0 +1,83 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1200 >>
+stream
+BT
+/F1 20 Tf
+50 740 Td
+(Nikhitha Lakshmi Devireddy) Tj
+/F1 11 Tf
+0 -22 Td
+(Data & Business Intelligence Analyst | B.Tech CSE AI & ML - VIT-AP) Tj
+0 -16 Td
+(Email: lakshmi.23bce20273@vitapstudent.ac.in | Phone: +91-8179079671) Tj
+0 -14 Td
+(LinkedIn: linkedin.com/in/nikhitha-lakshmi-devireddy | GitHub: github.com/Nikhitha-devireddy) Tj
+0 -24 Td
+/F1 13 Tf
+(SUMMARY) Tj
+/F1 10 Tf
+0 -16 Td
+(CSE Undergraduate specializing in AI & ML with strong foundations in SQL, Power BI, Java, and DSA.) Tj
+0 -14 Td
+(Experienced in Star Schema modeling, ETL pipelines, clinical rule engines, and low-latency inference.) Tj
+0 -24 Td
+/F1 13 Tf
+(CORE COMPETENCIES) Tj
+/F1 10 Tf
+0 -16 Td
+(- Data Analytics: SQL, Power BI, Power Query, DAX, Star Schema, Relational Database Normalization) Tj
+0 -14 Td
+(- Software & AI/ML: Python, Java, PostgreSQL, MySQL, LangGraph, Pydantic, Streamlit, XGBoost) Tj
+0 -14 Td
+(- Core Computer Science: DSA, OOP, DBMS, Operating Systems, Computer Networks, System Design) Tj
+0 -24 Td
+/F1 13 Tf
+(KEY PROJECTS & MEASURABLE OUTCOMES) Tj
+/F1 10 Tf
+0 -16 Td
+(- Enterprise BI Dashboard: Multi-page star schema, DAX measures tracking median salaries & job counts.) Tj
+0 -14 Td
+(- SafeBite AI: Cut product lookup latency from 30-50s to 2-3s with TTL caching & 48-test safety suite.) Tj
+0 -14 Td
+(- SQL Business Data Analysis: 3NF normalization, optimized multi-table JOINs, subquery aggregations.) Tj
+0 -14 Td
+(- LHC-TriggerMind: 0.115 ms median inference latency and 99.2% background rejection on ATLAS Higgs data.) Tj
+0 -24 Td
+/F1 13 Tf
+(EDUCATION) Tj
+/F1 10 Tf
+0 -16 Td
+(Vellore Institute of Technology, AP - B.Tech CSE (AI & ML) | 2023-2027 | CGPA: 8.75 / 10.0) Tj
+0 -14 Td
+(Harshini Junior College - Intermediate MPC: 98.4% | JEE Main Math: 92.5 percentile) Tj
+0 -14 Td
+(Montessori High School - SSC: 99.33%) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000001500 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1570
+%%EOF
