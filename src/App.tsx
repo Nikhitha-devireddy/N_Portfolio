@@ -33,7 +33,7 @@ export const App: React.FC = () => {
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0c] text-neutral-900 dark:text-neutral-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-150">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
-        <Hero />
+        <Hero darkMode={darkMode} />
         <CaseStudies />
         <Toolkit />
         <Experience />

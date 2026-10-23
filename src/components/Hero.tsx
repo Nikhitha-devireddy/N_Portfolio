@@ -1,21 +1,73 @@
 import React from 'react';
 import { portfolioConfig } from '../portfolioConfig';
 import { ArrowRight, MapPin, CheckCircle2, Database, BarChart3, Terminal } from 'lucide-react';
+import { Particles, StrokeText, ShinyText } from './reactbits';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  darkMode?: boolean;
+}
+
+export const Hero: React.FC<HeroProps> = ({ darkMode = false }) => {
   return (
-    <section className="pt-28 pb-16 md:pt-36 md:pb-24 border-b border-neutral-200 dark:border-neutral-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 border-b border-neutral-200 dark:border-neutral-800 overflow-hidden">
+      {/* Background Interactive Particles from React Bits */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-45 dark:opacity-60 overflow-hidden">
+        <Particles
+          particleCount={140}
+          particleSpread={9}
+          speed={0.08}
+          particleColors={
+            darkMode
+              ? ['#3b82f6', '#60a5fa', '#93c5fd', '#ffffff']
+              : ['#2563eb', '#1d4ed8', '#0284c7', '#475569']
+          }
+          particleBaseSize={85}
+          glow={darkMode ? 0.6 : 0.2}
+          twinkle={0.35}
+          connections={true}
+          connectionDistance={115}
+          moveParticlesOnHover={true}
+          hoverEffect="parallax"
+          lightMode={!darkMode}
+          alphaParticles={true}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         {/* Status pill & location */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
-          <div className="inline-flex items-center gap-2 px-2.5 py-1 text-xs font-mono font-medium rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60">
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 text-xs font-mono font-medium rounded-full bg-blue-50/90 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60 backdrop-blur-xs">
             <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse" />
-            {portfolioConfig.personal.roleBadge}
+            <ShinyText
+              text={portfolioConfig.personal.roleBadge}
+              color={darkMode ? '#93c5fd' : '#1d4ed8'}
+              shineColor="#ffffff"
+              speed={2.2}
+              glow={0.25}
+            />
           </div>
-          <div className="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-500 dark:text-neutral-400">
+          <div className="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-500 dark:text-neutral-400 bg-white/70 dark:bg-neutral-900/70 px-2.5 py-1 rounded-full border border-neutral-200/80 dark:border-neutral-800/80 backdrop-blur-xs">
             <MapPin className="w-3.5 h-3.5" />
             <span>{portfolioConfig.personal.location}</span>
           </div>
+        </div>
+
+        {/* Dynamic StrokeText Editorial Wordmark */}
+        <div className="mb-4 max-w-lg">
+          <StrokeText
+            text="DATA INTELLIGENCE"
+            strokeColor={darkMode ? '#60a5fa' : '#2563eb'}
+            fillColor={darkMode ? '#f8fafc' : '#0f172a'}
+            fontSize={38}
+            fontWeight={800}
+            letterSpacing={-1}
+            strokeWidth={1.2}
+            trigger="mount"
+            fillMode="wipe"
+            wipeFrom="left"
+            drawDuration={1.4}
+            hoverRedraw={true}
+          />
         </div>
 
         {/* Primary Headline */}
@@ -39,7 +91,7 @@ export const Hero: React.FC = () => {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-neutral-800 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded hover:border-neutral-400 dark:hover:border-neutral-500 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-neutral-800 dark:text-neutral-200 bg-white/90 dark:bg-neutral-900/90 border border-neutral-300 dark:border-neutral-700 rounded hover:border-neutral-400 dark:hover:border-neutral-500 backdrop-blur-xs transition-colors"
           >
             <span>Get in Touch</span>
           </a>
@@ -57,22 +109,28 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Impact Banner */}
-        <div className="bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 shadow-xs">
+        <div className="bg-white/90 dark:bg-neutral-900/80 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 sm:p-6 shadow-xs backdrop-blur-xs">
           <div className="flex items-center justify-between pb-3 mb-4 border-b border-neutral-100 dark:border-neutral-800 text-xs font-mono uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
             <span className="flex items-center gap-1.5 font-semibold text-neutral-800 dark:text-neutral-200">
               <CheckCircle2 className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-              Verified Performance & Systems Metrics
+              <ShinyText
+                text="Verified Performance & Systems Metrics"
+                color={darkMode ? '#e2e8f0' : '#1e293b'}
+                shineColor={darkMode ? '#60a5fa' : '#2563eb'}
+                speed={3}
+                glow={0.2}
+              />
             </span>
-            <span>Static Telemetry // Production Validated</span>
+            <span className="hidden sm:inline">Static Telemetry // Production Validated</span>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {portfolioConfig.hero.impactStats.map((stat, idx) => (
               <div
                 key={idx}
-                className="p-3 sm:p-4 rounded border border-neutral-100 dark:border-neutral-800/80 bg-neutral-50/50 dark:bg-neutral-950/40"
+                className="p-3 sm:p-4 rounded border border-neutral-100 dark:border-neutral-800/80 bg-neutral-50/70 dark:bg-neutral-950/50"
               >
-                <div className="text-xl sm:text-2xl font-bold font-mono text-neutral-950 dark:text-white tracking-tight mb-1 text-blue-600 dark:text-blue-400">
+                <div className="text-xl sm:text-2xl font-bold font-mono text-blue-600 dark:text-blue-400 tracking-tight mb-1">
                   {stat.metric}
                 </div>
                 <div className="text-xs font-semibold text-neutral-800 dark:text-neutral-200 uppercase tracking-wider mb-1">
